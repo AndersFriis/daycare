@@ -20,4 +20,4 @@ const parentModule = angular.module('parent', [
     .component('parentEdit', parentEditComponent)
     .component('parentItem', parentItemComponent);
 
-export default ParentModule;
+export default parentModule;

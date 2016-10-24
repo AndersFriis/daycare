@@ -1,29 +1,25 @@
 <div class="row">
-    <div class="col-md-6 col-md-offset-3">
+    <div class="col-md-6 col-md-offset-6">
         <div class="jumbotron">
-            <h2>ShoppingList</h2>
+            <h2>Add Your Childs Information</h2>
             <p class="lead">
                 
             </p>
-            <shopping-edit
+            <parent-edit
                 parent="parentPageCtrl.editedParent"
                 save="parentPageCtrl.saveParent(editedParent)"
             />
         </div>
     </div>
-    <div class="col-md-6 col-md-offset-3">
-        <h2>
-            Latest Shopping Lists
-            <hr>
-        </h2>
+    
 
-        <shopping-item 
+        <parent-item 
             ng-repeat="parent in parentPageCtrl.parent track by parent.id"
             parent="parent"
             delete="parentPageCtrl.deleteParent(parentToDelete)"
             update="parentPageCtrl.updateParent(parentToUpdate)"
         />
-    </div>
+    
 </div>
 
 

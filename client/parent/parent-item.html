@@ -12,7 +12,7 @@
         </p>
         <parent-edit
             ng-show="parentItemCtrl.editMode"
-            shopping="parentItemCtrl.parentToEdit"
+            parent="parentItemCtrl.parentToEdit"
             save="parentItemCtrl.editParent(editedParent)"
             cancel="parentItemCtrl.setEditMode(false)"
         />
@@ -29,7 +29,7 @@
                 <i class="fa fa-trash-o"></i>
             </button>
             <button class="btn btn-primary" ng-click="parentItemCtrl.deleteParent()">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                
             </button>
         </div>
     </div>
