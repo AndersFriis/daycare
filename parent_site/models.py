@@ -9,6 +9,11 @@ class ParentSite(models.Model):
     age = models.DecimalField(max_digits=6, decimal_places=2, blank=True, null=True,)
     emergency = models.DecimalField(max_digits=12, decimal_places=2, blank=True, null=True,)
     naptime = models.CharField(max_length=50)
+    email = models.CharField(max_length=50)
+    authorized = models.CharField(max_length=50)
+    medicine = models.CharField(max_length=50)
+
+
     
 
     class Meta:

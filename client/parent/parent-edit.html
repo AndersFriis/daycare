@@ -35,10 +35,19 @@
 
 
         <label>
-            Enter your Childs Allergies
+            Enter your Childs Allergies if Any
         </label>
         <textarea rows="6" cols="20"
             ng-model="parentEditCtrl.editedParent.allergies"
+            class="form-control"
+        ></textarea>
+
+
+        <label>
+            Any Medicine Reqquired by your Child in Any
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.medicine"
             class="form-control"
         ></textarea>    
 
@@ -61,6 +70,21 @@
             ng-model="parentEditCtrl.editedParent.emergency"
             class="form-control" 
         ></input>
+
+    <label>
+            Enter your Contact Email
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.email"
+            class="form-control"
+        ></textarea>
+    <label>
+            Authorized People to Pick Up Child
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.authorized"
+            class="form-control"
+        ></textarea>
     
     </div>
     
