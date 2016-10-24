@@ -1,0 +1,36 @@
+<div 
+    class="panel panel-default parent-item"
+    ng-mouseover="parentItemCtrl.setShowControls(true)"
+    ng-mouseout="parentItemCtrl.setShowControls(false)"
+>
+    <div class="panel-body">
+        <p class="lead" ng-show="!parentItemCtrl.editMode">
+            <h3>{{ parentItemCtrl.parent.name }} </h3> <br>
+            <h4>Price $</h4>
+            <h4>QTY</h4> 
+            <h4>Total Price $</h4> 
+        </p>
+        <parent-edit
+            ng-show="parentItemCtrl.editMode"
+            shopping="parentItemCtrl.parentToEdit"
+            save="parentItemCtrl.editParent(editedParent)"
+            cancel="parentItemCtrl.setEditMode(false)"
+        />
+    </div>
+    <div class="panel-footer clearfix">
+        <div class="pull-right">
+            {{ parentItemCtrl.parent.created | date:'medium'}}
+        </div>
+        <div class="parent-item-controls" ng-show="parentItemCtrl.showControls">
+            <button class="btn btn-default" ng-click="parentItemCtrl.setEditMode(true)">
+                <i class="fa fa-pencil-square-o"></i>
+            </button>
+            <button class="btn btn-danger" ng-click="parentItemCtrl.deleteParent()">
+                <i class="fa fa-trash-o"></i>
+            </button>
+            <button class="btn btn-primary" ng-click="parentItemCtrl.deleteParent()">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>

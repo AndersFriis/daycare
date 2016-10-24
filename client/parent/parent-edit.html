@@ -1,0 +1,71 @@
+<form ng-submit="parentEditCtrl.saveParent()">
+    <div class="form-group">
+        <label>
+            Enter your Childs First Name
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.name"
+            class="form-control"
+        ></textarea>
+
+        <label>
+            Enter your Childs Last Name
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.lastname"
+            class="form-control"
+        ></textarea>
+    
+    <div class="form-group">
+        <label>
+           Enter Your Childs Age
+        </label>
+        <input type ="number"
+            ng-model="parentEditCtrl.editedParent.age"
+            class="form-control" 
+        ></input>
+
+        <label>
+            Enter your Childs Food Preference
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.foodprefer"
+            class="form-control"
+        ></textarea>
+
+
+        <label>
+            Enter your Childs Allergies
+        </label>
+        <textarea rows="6" cols="20"
+            ng-model="parentEditCtrl.editedParent.allergies"
+            class="form-control"
+        ></textarea>    
+
+
+
+    <div class="form-group">
+        <label>
+            Emergency Contact For Parents
+        </label>
+        <input type ="number"
+            ng-model="parentEditCtrl.editedParent.emergency"
+            class="form-control" 
+        ></input>
+    
+    </div>
+    
+    <button class="btn btn-primary" type="submit">
+        Save Your Childs Info
+    </button>
+
+
+    <button
+        class="btn btn-danger"
+        type="button"
+        ng-show="parentEditCtrl.cancel"
+        ng-click="parentEditCtrl.cancel()">
+        Cancel
+    </button>
+    
+</form>
