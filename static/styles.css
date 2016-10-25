@@ -1,3 +1,10 @@
+.container-childcollaps{
+    position:absolute;
+    margin-left: 950px;
+   
+}
+
+
 body{
     background-color: lightblue;
 }

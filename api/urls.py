@@ -1,10 +1,10 @@
 from django.conf.urls import include, url
 from rest_framework import routers
-from parent_site.viewsets import Parent_siteViewSet
+from parent_site.viewsets import ParentSiteViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'parent_site', Parent_siteViewSet)
+router.register(r'parent', ParentSiteViewSet)
 
 
 urlpatterns = [

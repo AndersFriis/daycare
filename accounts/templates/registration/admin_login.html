@@ -1,5 +1,7 @@
 {% extends "core/base.html" %}
 
+
+
 {% block content %}
     <h2>Login</h2>
 
@@ -8,14 +10,29 @@
             Your username and password didn't match. Please try again.
         </div>
     {% else %}
-        <p>Please use the form below to log in.</p>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                <p>Please use the form below to log in.</p>
+                </div>
+            </div>
+
+    <br>
     {% endif %}
-    <form action="{% url 'login' %}" method="POST">
+    <form action="{% url 'accounts:login' %}" method="POST">
         {% csrf_token %}
         {% for field in form %}
             {% include "core/_form_input.html" %}
         {% endfor %}
-        <input type="hidden" name="next" value="{{next}}">
-        <button type="submit" class="btn btn-primary">Log In</button>
+        
+            <input type="hidden" name="next" value="{{next}}">
+            <button type="submit" class="btn btn-primary col-md-6 col-md-offset-3">Log In</button>
+            </div>
+        </div>    
+        </div>
     </form>
 {% endblock content %}
+
+
+
+                        

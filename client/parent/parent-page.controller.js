@@ -14,9 +14,9 @@ function ParentPageController(parentAPIService, flashesService, $interval) {
     $interval(getParent, 5000);
 
     ctrl.saveParent = function saveParent(editedParent) {
-        parentAPIService.parent.save(editedParent).$promise.then((savedParent) => {
+       parentAPIService.parent.save(editedParent).$promise.then((savedParent) => {
             ctrl.parent = [
-                savedparent,
+                savedParent,
                 ...ctrl.parent,
             ];
             ctrl.editedParent = {};

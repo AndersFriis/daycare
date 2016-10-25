@@ -32,6 +32,7 @@ INSTALLED_APPS = (
     'admin_site',
     'parent_site',
     'api',
+    'accounts',
 )
 
 MIDDLEWARE_CLASSES = (

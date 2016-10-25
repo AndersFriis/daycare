@@ -11,9 +11,13 @@ class Childinfo(BootstrapFormMixin, forms.ModelForm):
         fields = (
             'name',
             'lastname',
-            'lastname',
+            'naptime',
             'age',
             'foodprefer'
             'emergency'
+            'allergies'
+            'medicine'
+            'email'
+            'authorized'
             
         )

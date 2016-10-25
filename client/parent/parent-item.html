@@ -5,10 +5,18 @@
 >
     <div class="panel-body">
         <p class="lead" ng-show="!parentItemCtrl.editMode">
-            <h3>{{ parentItemCtrl.parent.name }} </h3> <br>
-            <h4>Price $</h4>
-            <h4>QTY</h4> 
-            <h4>Total Price $</h4> 
+            <h4>{{ parentItemCtrl.parent.name }} </h4>
+            <h4>{{ parentItemCtrl.parent.lastname }}</h4>
+            <h4>{{ parentItemCtrl.parent.age }}</h4>
+            <h4>{{ parentItemCtrl.parent.naptime }}</h4>
+            <h4>{{ parentItemCtrl.parent.foodprefer }}</h4> 
+            <h4>{{ parentItemCtrl.parent.allergies }}</h4>
+            <h4>{{ parentItemCtrl.parent.medicine }}</h4>
+            <h4>{{ parentItemCtrl.parent.emergency }}</h4>
+            <h4>{{ parentItemCtrl.parent.email }}</h4>
+            <h4>{{ parentItemCtrl.parent.authorized }}</h4>
+            
+
         </p>
         <parent-edit
             ng-show="parentItemCtrl.editMode"
@@ -31,6 +39,13 @@
             <button class="btn btn-primary" ng-click="parentItemCtrl.deleteParent()">
                 
             </button>
+
         </div>
     </div>
 </div>
+
+
+
+
+
+
