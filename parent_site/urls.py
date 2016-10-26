@@ -9,6 +9,7 @@ router.register(r'parentsite', ParentSiteViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls)),
+    url(r'^accounts/', include('accounts.urls', namespace='accounts')),
 ]
 
 

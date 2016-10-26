@@ -18,5 +18,7 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include('api.urls')),
     url(r'^', include('core.urls', namespace='core')),
+    url(r'^accounts/', include('accounts.urls', namespace='accounts')),
+    
 
 ]
