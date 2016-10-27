@@ -1,5 +1,8 @@
+
+
 .container-info{
-    margin-top: 0px;
+    position: absolute;
+    margin-top: -500px;
     margin-left: 990px;
 }
 
@@ -9,9 +12,8 @@
 }
 
 .container-childcollaps{
+    background-color: lightblue;
     
-    
-   
 }
 
 

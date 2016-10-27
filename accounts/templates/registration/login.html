@@ -3,6 +3,15 @@
 
 
 {% block content %}
+<ul class="nav navbar-nav navbar-right">
+            {% if request.user.is_authenticated %}
+                <li><a href="{% url 'accounts:logout' %}" class="btn btn-success btn-md">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'accounts:login' %}" class="btn btn-success btn-md">Login</a></li>
+                <li><a href="{% url 'accounts:register' %}" class="btn btn-success btn-md">Sign Up</a></li>
+            {% endif %}
+        </ul>
+      </ul>
     <h2>Login</h2>
 
     {% if form.errors %}
@@ -26,7 +35,7 @@
         {% endfor %}
         
             <input type="hidden" name="next" value="{{next}}">
-            <button type="submit" class="btn btn-primary col-md-6 col-md-offset-3">Log In</button>
+            <button type="submit" class="btn btn-primary col-md-3 col-md-offset-4">Log In</button>
             </div>
         </div>    
         </div>

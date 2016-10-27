@@ -1,6 +1,7 @@
 from django import forms
 
 from .models import Childinfo
+
 from core.forms import BootstrapFormMixin
 
 class Childinfo(BootstrapFormMixin, forms.ModelForm):
@@ -21,3 +22,6 @@ class Childinfo(BootstrapFormMixin, forms.ModelForm):
             'authorized'
             
         )
+
+
+

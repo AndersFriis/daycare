@@ -1,11 +1,13 @@
 from django.conf.urls import include, url
 from rest_framework import routers
 from parent_site.viewsets import ParentSiteViewSet
-from rest_framework import permissions
+from post.viewsets import PostViewSet
+
 
 
 router = routers.DefaultRouter()
 router.register(r'parent', ParentSiteViewSet)
+router.register(r'post', PostViewSet)
 
 
 urlpatterns = [
@@ -13,8 +15,5 @@ urlpatterns = [
 
 
 ]
-
-
-
 
 

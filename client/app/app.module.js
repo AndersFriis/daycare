@@ -8,7 +8,11 @@ import appComponent from './app.component';
 const AppModule = angular.module('app', [
     ParentModule.name,
     FlashesModule.name,
-])
+])  
+    .config(function($httpProvider){
+        $httpProvider.defaults.xsrfCookieName = 'csrftoken'
+        $httpProvider.defaults.xsrfHeaderName = 'X-CSRFToken'
+    })
     .component('app', appComponent);
 
 export default AppModule;

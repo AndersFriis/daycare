@@ -19,10 +19,13 @@ SECRET_KEY = os.environ['SECRET_KEY']
 ALLOWED_HOSTS = []
 
 REST_FRAMEWORK = {
-  'DEFAULT_PERMISSION_CLASSES': (
-   'rest_framework.permissions.AllowAny',
-)
+    # other settings...
+
+    'DEFAULT_AUTHENTICATION_CLASSES': [],
+    'DEFAULT_PERMISSION_CLASSES': [],
 }
+
+
 
 # Application definition
 
@@ -39,6 +42,7 @@ INSTALLED_APPS = (
     'parent_site',
     'api',
     'accounts',
+    'post',
 )
 
 MIDDLEWARE_CLASSES = (

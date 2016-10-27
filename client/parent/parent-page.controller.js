@@ -24,7 +24,7 @@ function ParentPageController(parentAPIService, flashesService, $interval) {
         });
     };
 
-    ctrl.updateParent = function updateParent(ParentToUpdate) {
+    ctrl.updateParent = function updateParent(parentToUpdate) {
         parentAPIService.parent.update(parentToUpdate).$promise.then(() => {
             flashesService.displayMessage('Your Childs Info Have Been Updated!');
         });

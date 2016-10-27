@@ -1,6 +1,16 @@
 {% extends "core/base.html" %}
 
 {% block content %}
+    <ul class="nav navbar-nav navbar-right">
+            {% if request.user.is_authenticated %}
+                <li><a href="{% url 'accounts:logout' %}" class="btn btn-success btn-md">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'accounts:login' %}" class="btn btn-success btn-md">Login</a></li>
+                <li><a href="{% url 'accounts:register' %}" class="btn btn-success btn-md">Sign Up</a></li>
+            {% endif %}
+        </ul>
+      </ul>
+
     <div class="jumbotron-signup">
         <h2>Please sign up</h2>
         </div>
