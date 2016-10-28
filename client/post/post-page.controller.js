@@ -20,13 +20,13 @@ function PostPageController(postAPIService, flashesService, $interval) {
                 ...ctrl.post,
             ];
             ctrl.editedPost = {};
-            flashesService.displayMessage('Info Saved!', 'success');
+            flashesService.displayMessage('Info Sent To Anders!', 'success');
         });
     };
 
     ctrl.updatePost = function updatePost(postToUpdate) {
         postAPIService.post.update(postToUpdate).$promise.then(() => {
-            flashesService.displayMessage('Your Info Have Been Updated!');
+            flashesService.displayMessage('Your Post Have Been Updated!');
         });
     };
 
@@ -39,7 +39,7 @@ function PostPageController(postAPIService, flashesService, $interval) {
         }
 
         postAPIService.post.delete(postToDelete).$promise.then(() => {
-            flashesService.displayMessage('Your Info Have Been Deleted');
+            flashesService.displayMessage('Your Post Have Been Deleted');
         });
     };
 }

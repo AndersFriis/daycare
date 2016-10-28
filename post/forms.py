@@ -9,7 +9,7 @@ class Postinfo(BootstrapFormMixin, forms.ModelForm):
         model = Postinfo
 
         fields = (
-            'name'
+            'post'
             )
 
 

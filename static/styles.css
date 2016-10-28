@@ -1,5 +1,11 @@
+.importantinfopanel{
+    margin-left: 10px;
+    background-color: lightblue;
+}
+
+
 .profilepic{
-    margin-top: -160px;
+    margin-top: -50px;
     width: 150px;
     height: 150px;
 }
@@ -12,7 +18,7 @@
 .aboutkids{
     width: 200px;
     position: relative;
-    margin-top: 30px;
+    margin-top: -10px;
     margin-left: 500px;
 
 }
@@ -23,9 +29,8 @@
     
 }
 
-.container-info{
-    position: absolute;
-    margin-left: 990px;
+.contactinfo{
+    margin-top: -10px;
 }
 
 .container-funpics{
@@ -33,10 +38,7 @@
     margin-left: 550px;
 }
 
-.container-childcollaps{
-    background-color: lightblue;
-    
-}
+
 
 
 body{
