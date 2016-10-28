@@ -42,7 +42,7 @@
 
 
 
-<div 
+<div class="post" 
     class="panel panel-default post-item"
     ng-mouseover="postItemCtrl.setShowControls(true)"
     ng-mouseout="postItemCtrl.setShowControls(false)"
@@ -52,17 +52,19 @@
             <h4>{{ postItemCtrl.post.post }} </h4>
             
         </p>
-        <parent-edit
+        <post-edit
             ng-show="postItemCtrl.editMode"
             parent="postItemCtrl.postToEdit"
             save="postItemCtrl.editPost(editedPost)"
             cancel="postItemCtrl.setEditMode(false)"
         />
     </div>
+    
     <div class="panel-footer clearfix">
         <div class="pull-right">
             {{ postItemCtrl.post.created | date:'medium'}}
         </div>
+        
         <div class="post-item-controls" ng-show="postItemCtrl.showControls">
             <button class="btn btn-default" ng-click="postItemCtrl.setEditMode(true)">
                 <i class="fa fa-pencil-square-o"></i>
@@ -72,6 +74,7 @@
             </button>
             
 
+            </div>
         </div>
     </div>
 </div>

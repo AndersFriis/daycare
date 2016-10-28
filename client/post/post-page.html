@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3">
+                <div class="center-text">
+                    <h2>Important Info</h2>
+                    <p class="lead">
+                    </p>
+
+                    <post-edit
+                        post="postPageCtrl.editedPost"
+                        save="postPageCtrl.savePost(editedPost)"
+                    />
+                
+                    <post-item 
+                        ng-repeat="post in postPageCtrl.post track by post.id"
+                        post="post"
+                        delete="postPageCtrl.deletePost(postToDelete)"
+                        update="postPageCtrl.updatePost(postToUpdate)"
+                    />
+                </div>
+        </div>
+    </div>
+</div>    

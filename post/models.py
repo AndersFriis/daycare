@@ -2,13 +2,13 @@ from django.db import models
 from django.core.urlresolvers import reverse
 
 class Post(models.Model):
-    name = models.CharField(max_length=50)
+    post = models.CharField(max_length=50)
     
     class Meta:
-        ordering = ['name']
+        ordering = ['post']
 
     def __str__(self):
-        return self.name
+        return self.post
 
 
 
