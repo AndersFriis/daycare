@@ -17,9 +17,9 @@
 
 }
 .container-post{
-    position: relative;
-    margin-top: -400px;
-    margin-left: 250px;
+    position: absolute;
+    margin-top: -420px;
+    margin-left: 450px;
     
 }
 
@@ -29,7 +29,7 @@
 }
 
 .container-funpics{
-    margin-top: 500px;
+    margin-top: 380px;
     margin-left: 550px;
 }
 

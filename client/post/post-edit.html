@@ -1,9 +1,22 @@
 <form ng-submit="postEditCtrl.savePost()">
     <div class="form-group">
         <label>
-            Important Info for Admin
+            Enter your Info for Anders
         </label>
         <textarea rows="2" cols="5"
             ng-model="postEditCtrl.editedPost.name"
             class="form-control"
         ></textarea>
+    <button class="btn btn-primary" type="submit">
+        Save Your Childs Info
+    </button>
+
+
+    <button
+        class="btn btn-danger"
+        type="button"
+        ng-show="postEditCtrl.cancel"
+        ng-click="postEditCtrl.cancel()">
+        Cancel
+    </button>
+</form>

@@ -47,31 +47,7 @@
 </div>
     
 
-<div class="container-post">
-    <div class="row">
-        <div class="col-md-3 col-md-offset-3">
-                <div class="center-text">
-                    <h2>Information For Anders</h2>
-                    <p class="lead">
-                    </p>
 
-                    <post-edit
-                        post="postPageCtrl.editedPost"
-                        save="postPageCtrl.savePost(editedPost)"
-                    />
-                
-        
-
-            <post-item 
-                ng-repeat="post in postPageCtrl.post track by post.id"
-                post="post"
-                delete="postPageCtrl.deletePost(postToDelete)"
-                update="postPageCtrl.updatePost(postToUpdate)"
-            />
-                </div>
-        </div>
-    </div>
-</div>
 
 <div id="fun" class="collapse">
 <h1>Pics of your Kids</h1>
@@ -80,6 +56,50 @@
 <img class="picsofyourkids" src="/static/kideating.jpg"/>
 </div>
 
+<div class="container-post">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-3">
+                <div class="center-text">
+                    <h2>Important Info</h2>
+                    <p class="lead">
+                    </p>
+
+                    <post-edit
+                        post="postPageCtrl.editedPost"
+                        save="postPageCtrl.savePost(editedPost)"
+                    />
+                
+                    <post-item 
+                        ng-repeat="post in postPageCtrl.post track by post.id"
+                        post="post"
+                        delete="postPageCtrl.deletePost(postToDelete)"
+                        update="postPageCtrl.updatePost(postToUpdate)"
+                    />
+            
+
+<form ng-submit="postEditCtrl.savePost()">
+    <div class="form-group">
+        <label>
+            Enter your Info for Anders
+        </label>
+        <textarea rows="4" cols="4"
+            ng-model="postEditCtrl.editedPost.post"
+            class="form-control"
+        ></textarea>
+    <button class="btn btn-primary" type="submit">
+        Save Your Info
+    </button>
 
 
-
+    <button
+        class="btn btn-danger"
+        type="button"
+        ng-show="postEditCtrl.cancel"
+        ng-click="postEditCtrl.cancel()">
+        Cancel
+    </button>
+</form>     </div>    
+            </div>
+        </div>
+    </div>
+</div>
