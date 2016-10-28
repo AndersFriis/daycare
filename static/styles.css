@@ -1,8 +1,30 @@
+.profilepic{
+    margin-top: -160px;
+    width: 150px;
+    height: 150px;
+}
 
+.picsofyourkids{
+    width: 100px;
+    height: 100;
+}
+
+.aboutkids{
+    width: 200px;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 500px;
+
+}
+.container-post{
+    position: relative;
+    margin-top: -400px;
+    margin-left: 250px;
+    
+}
 
 .container-info{
     position: absolute;
-    margin-top: -500px;
     margin-left: 990px;
 }
 
