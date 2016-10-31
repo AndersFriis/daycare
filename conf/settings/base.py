@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'api',
     'accounts',
     'post',
+    'news',
 )
 
 MIDDLEWARE_CLASSES = (

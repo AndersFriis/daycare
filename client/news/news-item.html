@@ -1,0 +1,30 @@
+<div 
+    class="panel panel-default news-item"
+    ng-mouseover="newsItemCtrl.setShowControls(true)"
+    ng-mouseout="newsItemCtrl.setShowControls(false)"
+>
+    <div class="panel-body">
+        <p class="lead" ng-show="!newsItemCtrl.editMode">
+            <h4>{{ newsItemCtrl.news.news }} </h4>
+            
+        </p>
+        <news-edit
+            ng-show="newsItemCtrl.editMode"
+            parent="newsItemCtrl.newsToEdit"
+            save="newsItemCtrl.editNews(editedNews)"
+            cancel="newsItemCtrl.setEditMode(false)"
+        />
+    </div>
+    <div class="panel-footer clearfix">
+        <div class="pull-right">
+            {{ newsItemCtrl.news.created | date:'medium'}}
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+

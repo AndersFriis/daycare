@@ -1,9 +1,13 @@
-.container-importantinfopanel{
+.news{
+    position: absolute;
+    margin-top: 10px;
+}
+
+.importantinfopanel{
     position: absolute;
     margin-right: 1000px;
     margin-top: 10px;
-    background-color: lightblue;
-}
+    
 
 
 .profilepic{
@@ -26,11 +30,9 @@
 }
 
 
-.contactinfo{
-    margin-top: -10px;
-}
 
-.container-funpics{
+
+.funpics{
     
     margin-top: 840px;
     margin-left: 650px;

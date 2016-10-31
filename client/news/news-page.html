@@ -1,0 +1,21 @@
+<div class="container-news">
+    <div class="row">
+    <div class="col-md-3 col-md-offset-4">
+        <h2>Important News</h2>
+        <p class="lead">
+        </p>
+        
+        <news-edit
+            news="newsPageCtrl.editedNews"
+            save="newsPageCtrl.saveNews(editedNews)"
+        />
+    
+        <news-item 
+            ng-repeat="news in newsPageCtrl.news track by news.id"
+            news="news"
+            delete="newsPageCtrl.deleteNews(newsToDelete)"
+            update="newsPageCtrl.updateNews(newsToUpdate)"
+        />
+    </div>
+    </div>
+</div>    
