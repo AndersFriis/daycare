@@ -5,6 +5,7 @@ import PostModule from '../post/post.module';
 import NewsModule from '../news/news.module';
 import FlashesModule from '../flashes/flashes.module';
 
+
 import appComponent from './app.component';
 
 const AppModule = angular.module('app', [
@@ -12,6 +13,7 @@ const AppModule = angular.module('app', [
     PostModule.name,
     NewsModule.name,
     FlashesModule.name,
+    
 ])  
     .config(function($httpProvider){
         $httpProvider.defaults.xsrfCookieName = 'csrftoken'

@@ -5,16 +5,16 @@
 >
     <div class="panel-body">
         <p class="lead" ng-show="!parentItemCtrl.editMode">
-            <h4>{{ parentItemCtrl.parent.name }} </h4>
-            <h4>{{ parentItemCtrl.parent.lastname }}</h4>
-            <h4>{{ parentItemCtrl.parent.age }}</h4>
-            <h4>{{ parentItemCtrl.parent.naptime }}</h4>
-            <h4>{{ parentItemCtrl.parent.foodprefer }}</h4> 
-            <h4>{{ parentItemCtrl.parent.allergies }}</h4>
-            <h4>{{ parentItemCtrl.parent.medicine }}</h4>
-            <h4>{{ parentItemCtrl.parent.emergency }}</h4>
-            <h4>{{ parentItemCtrl.parent.email }}</h4>
-            <h4>{{ parentItemCtrl.parent.authorized }}</h4>
+            <h4><p>First Name :</p>{{ parentItemCtrl.parent.name }} </h4>
+            <h4><p>Last Name :</p>{{ parentItemCtrl.parent.lastname }}</h4>
+            <h4><p>Age :</p>{{ parentItemCtrl.parent.age }}</h4>
+            <h4><p>Nap Time :</p>{{ parentItemCtrl.parent.naptime }}</h4>
+            <h4><p>Food Prefered :</p>{{ parentItemCtrl.parent.foodprefer }}</h4> 
+            <h4><p>Known Allergies :</p>{{ parentItemCtrl.parent.allergies }}</h4>
+            <h4><p>Medicine Needed :</p>{{ parentItemCtrl.parent.medicine }}</h4>
+            <h4><p>Emergency Number :</p>{{ parentItemCtrl.parent.emergency }}</h4>
+            <h4><p>Parent Email :</p>{{ parentItemCtrl.parent.email }}</h4>
+            <h4><p>People Authorized Pickup :</p>{{ parentItemCtrl.parent.authorized }}</h4>
         </p>
         <parent-edit
             ng-show="parentItemCtrl.editMode"
@@ -42,7 +42,8 @@
 
 
 
-<div class="post" 
+<div class="post"
+ 
     class="panel panel-default post-item"
     ng-mouseover="postItemCtrl.setShowControls(true)"
     ng-mouseout="postItemCtrl.setShowControls(false)"
@@ -79,7 +80,7 @@
     </div>
 </div>
 
-<div class="news" 
+<div class="news"
     class="panel panel-default news-item"
     ng-mouseover="newsItemCtrl.setShowControls(true)"
     ng-mouseout="newsItemCtrl.setShowControls(false)"
@@ -112,7 +113,6 @@
         </div>
     </div>
 </div>
-
 
 
 

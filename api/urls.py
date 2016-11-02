@@ -6,10 +6,12 @@ from news.viewsets import NewsViewSet
 
 
 
+
 router = routers.DefaultRouter()
 router.register(r'parent', ParentSiteViewSet)
 router.register(r'post', PostViewSet)
 router.register(r'news', NewsViewSet)
+
 
 
 urlpatterns = [

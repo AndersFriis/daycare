@@ -1,50 +1,69 @@
-.news{
-    position: absolute;
-    margin-top: 10px;
+
+
+.childinfo{
+    height: 200px;
+    width: 200px;
 }
 
-.importantinfopanel{
-    position: absolute;
-    margin-right: 1000px;
-    margin-top: 10px;
-    
-
-
-.profilepic{
-    margin-top: -50px;
-    width: 170px;
-    height: 170px;
+.jumbotron-signup{
+    background-color: lightblue;
+    height: 440px;
+    width: 290px;
+    margin-left: 530px;
 }
+
+
+
 
 .picsofyourkids{
     width: 100px;
     height: 100;
 }
 
-.aboutkids{
-    width: 200px;
-    position: relative;
-    margin-top: -10px;
-    margin-left: 500px;
-
+.profilepic{
+    
+    width: 170px;
+    height: 150px;
 }
-
-
-
 
 .funpics{
+    position: relative;
+
+}
     
-    margin-top: 840px;
-    margin-left: 650px;
+body{
+    background-image: url("daycarebackground.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+
+}
+
+.container-importantinfo{
+    background-color: lightblue;
+    height: 400px;
+    width: 300px;
+    border-radius: 1%;
+    
 }
 
 
 
 
-body{
+.jumbotron-news{
+    
+    background-color: lightblue;
+    height: 200px;
+    width: 300px;
+    border-radius: 1%;
+    
+
+}
+
+.panel-body{
     background-color: lightblue;
 }
-}
+
 
 flashes {
     display: block !important;

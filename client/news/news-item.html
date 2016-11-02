@@ -19,7 +19,9 @@
         <div class="pull-right">
             {{ newsItemCtrl.news.created | date:'medium'}}
         </div>
-        
+        <button class="btn btn-danger" ng-click="newsItemCtrl.deleteNews()">
+                <i class="fa fa-trash-o"></i>
+            </button>
     </div>
 </div>
 
