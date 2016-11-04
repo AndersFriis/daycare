@@ -6,15 +6,24 @@
     <div class="panel-body">
         <p class="lead" ng-show="!parentItemCtrl.editMode">
             <h4><p>First Name :</p>{{ parentItemCtrl.parent.name }} </h4>
+            <hr>
             <h4><p>Last Name :</p>{{ parentItemCtrl.parent.lastname }}</h4>
+            <hr>
             <h4><p>Age :</p>{{ parentItemCtrl.parent.age }}</h4>
+            <hr>
             <h4><p>Nap Time :</p>{{ parentItemCtrl.parent.naptime }}</h4>
-            <h4><p>Food Prefered :</p>{{ parentItemCtrl.parent.foodprefer }}</h4> 
+            <hr>
+            <h4><p>Snacks Prefered :</p>{{ parentItemCtrl.parent.foodprefer }}</h4> 
+            <hr>
             <h4><p>Known Allergies :</p>{{ parentItemCtrl.parent.allergies }}</h4>
+            <hr>
             <h4><p>Medicine Needed :</p>{{ parentItemCtrl.parent.medicine }}</h4>
+            <hr>
             <h4><p>Emergency Number :</p>{{ parentItemCtrl.parent.emergency }}</h4>
+            <hr>
             <h4><p>Parent Email :</p>{{ parentItemCtrl.parent.email }}</h4>
-            <h4><p>People Authorized Pickup :</p>{{ parentItemCtrl.parent.authorized }}</h4>
+            <hr>
+            <h4><p>Authorized Pickup :</p>{{ parentItemCtrl.parent.authorized }}</h4>
         </p>
         <parent-edit
             ng-show="parentItemCtrl.editMode"

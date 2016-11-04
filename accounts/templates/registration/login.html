@@ -3,17 +3,24 @@
 
 
 {% block content %}
+<body style="background-color:lightblue;"></body>
+<img class="bannerlogin" src="/static/kidsbannerlogin.jpg"/>
 
-<ul class="nav navbar-nav navbar-right">
+<div class="buttons">
             {% if request.user.is_authenticated %}
-                <li><a href="{% url 'accounts:logout' %}" class="btn btn-success btn-sm">Logout</a></li>
+                <a href="{% url 'accounts:logout' %}" class="btn btn-success btn-sm">Logout</a>
             {% else %}
-                <li><a href="{% url 'accounts:login' %}" class="btn btn-success btn-sm">Login</a></li>
-                <li><a href="{% url 'accounts:register' %}" class="btn btn-success btn-sm">Sign Up</a></li>
+                <a href="{% url 'accounts:login' %}" class="btn btn-success btn-sm">Login</a>
+                <a href="{% url 'accounts:register' %}" class="btn btn-success btn-sm">Sign Up</a>
             {% endif %}
-        </ul>
-      </ul>
-    <h2>Login</h2>
+</div>        
+    <div class="Welcome-to-Awesome-Daycare">
+    <h2><span class="red">W</span><span class="purple">e</span><span class="red">l</span><span class="green">c</span><span class="yellow">o</span><span class="blue">m</span><span class="green">e</span>
+    <span class="red">t</span><span class="yellow">o</span>
+    <span  class="green">A</span><span class="red">w</span><span class="blue">e</span><span class="purple">s</span><span class="red">o</span><span class="red">m</span><span class="red">e</span>
+    <span class="purple">D</span><span class="green">a</span><span class="red">y</span><span class="blue">c</span><span class="red">a</span><span class="green">r</span><span class="red">e</span></h2>
+    
+    </div>
 
     {% if form.errors %}
         <div class="alert alert-danger">
@@ -21,8 +28,8 @@
         </div>
     {% else %}
         
-            
-                <h2>Parents Please Log In.</h2>
+<div class="jumbotron-login">        
+    <h2>Parent Log In.</h2>
                 
     <br>
     {% endif %}
@@ -36,11 +43,9 @@
         
             <input type="hidden" name="next" value="{{next}}">
             <button type="submit" class="btn btn-primary col-md-3 col-md-offset-3">Log In</button>
-            </div>
-        </div>    
-        </div>
+            
     </form>
-    </div>
+</div>    
 
 
 {% endblock content %}

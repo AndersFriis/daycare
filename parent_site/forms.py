@@ -14,7 +14,7 @@ class Childinfo(BootstrapFormMixin, forms.ModelForm):
             'lastname',
             'naptime',
             'age',
-            'foodprefer'
+            'snacksprefer'
             'emergency'
             'allergies'
             'medicine'

@@ -4,7 +4,7 @@ from django.core.urlresolvers import reverse
 class ParentSite(models.Model):
     name = models.CharField(max_length=50)
     lastname = models.CharField(max_length=50)
-    foodprefer = models.CharField(max_length=50)
+    snacksprefer = models.CharField(max_length=50)
     allergies = models.CharField(max_length=50)
     age = models.IntegerField(blank=True, null=True,)
     emergency = models.IntegerField(blank=True, null=True,)

@@ -5,5 +5,5 @@ from .models import ParentSite
 class ParentSiteSerializer(serializers.ModelSerializer):
     class Meta:
         model = ParentSite
-        fields = ('id', 'name', 'lastname', 'age', 'emergency', 'foodprefer', 'allergies', 'naptime', 'email','authorized', 'medicine' )
+        fields = ('id', 'name', 'lastname', 'age', 'emergency', 'snacksprefer', 'allergies', 'naptime', 'email','authorized', 'medicine' )
 
