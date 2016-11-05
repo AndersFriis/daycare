@@ -119,3 +119,8 @@ LOGOUT_URL = reverse_lazy('accounts:logout')
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'friis73071@gmail.com'
+
+BASE_URL = 'http://localhost:8000'

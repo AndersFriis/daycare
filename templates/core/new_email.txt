@@ -1,0 +1,5 @@
+**New email**
+
+There is a new chat message from Awesome Day Care {{post.created_date}}
+
+The message can be viewed at: {{postemail.get_email_url}}

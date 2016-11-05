@@ -1,21 +1,49 @@
 
+/* The alert message box */
+.alert {
+    padding: 20px;
+    background-color: #f44336; /* Red */
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
+
+
+.yougotmail{
+    position: absolute;
+    background-color: #f48342;
+    height: 90px;
+    width: 200px;
+    margin-left: 1050px;
+    margin-top: -330px;
+    
+    
+}
 
 .center-text{
 text-align:center;
 color: red;
 }
 
-.Welcome-to-Awesome-Daycare{
-    text-align:center;
-    
-}
 
-.Welcome-to-Awesome-Daycare-parentpage{
-    background-color: lightgreen;
-    height: 51px;
-    text-align:center;
-    margin-top: -20px;
-}
+
+
 
 .footer{
     background-color: lightgreen;
@@ -34,16 +62,7 @@ color: red;
 
 }
 
-.jumbotron-hello{
-    position: absolute;
-    background-color: #f48342;
-    height: 190px;
-    width: 300px;
-    margin-top: -190px;
-    border-radius: 1%;
-    border: solid 1px;
-    border-color: black;
-}
+
 
 .childinfo{
     height: 200px;
@@ -60,7 +79,7 @@ color: red;
 
 .picsofyourkids{
     width: 100px;
-    height: 100;
+    height: 100px;
 }
 
 .profilepic{
@@ -80,9 +99,7 @@ color: red;
 }
 
 body{
-    background-image: url("");
-    background-repeat:repeat;
-    background-size: 
+    padding-top: 
 }
 
 
@@ -176,3 +193,64 @@ parent-item.ng-leave-active {
 .pink{
     color: pink;
 }
+
+.jumbotron{
+    background-image: url("kidsbackground.jpg");
+    background-repeat:no-repeat;
+    background-size: 80%;
+    min-height: 600px;
+    background-color: #659EC7;
+    background-position: center top;
+}
+
+.well h1{
+    background-color: white;
+    color: #659EC7;
+
+}
+
+.latestnews{
+    background-color:#659EC7;
+    
+}
+
+.latestnews h1{
+    background-color: #659EC7;
+    color: white;
+}
+
+.calendarpic{
+    width: 100px;
+    height: 80px;
+}
+
+.calender img{
+    float: left;
+}
+
+.kideating{
+    height: 100px; 
+    width: 130px;
+    display: inline-block;
+}
+
+.creativelearning{
+    height: 100px; 
+    width: 130px;
+    display: inline-block;
+}
+
+.caringteacher{
+    height: 100px; 
+    width: 130px;
+    display: inline-block;
+}
+
+.contactinfo h3{
+    color: #659EC7;
+}
+
+.highlight  h3, .highlight  h5 {
+   color: #659EC7; 
+}
+
