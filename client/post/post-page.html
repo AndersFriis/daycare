@@ -1,12 +1,13 @@
-        <post-edit
-            post="postPageCtrl.editedPost"
-            save="postPageCtrl.savePost(editedPost)"
-        />
-    
-        <post-item 
-            ng-repeat="post in postPageCtrl.post track by post.id"
-            post="post"
-            delete="postPageCtrl.deletePost(postToDelete)"
-            update="postPageCtrl.updatePost(postToUpdate)"
-    />
-            
+        
+        
+<post-edit
+    post="postPageCtrl.editedPost"
+    save="postPageCtrl.savePost(editedPost)"
+/>
+
+<post-item 
+    ng-repeat="post in postPageCtrl.post track by post.id"
+    post="post"
+    delete="postPageCtrl.deletePost(postToDelete)"
+    update="postPageCtrl.updatePost(postToUpdate)"
+/>

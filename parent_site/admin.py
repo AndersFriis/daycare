@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import ParentSite
+
+class ParentAdmin(admin.ModelAdmin):
+    prepopulated_fields = {"slug": ("name", "id",)}

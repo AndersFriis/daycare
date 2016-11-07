@@ -7,6 +7,9 @@ from news.viewsets import NewsViewSet
 
 
 
+
+
+
 router = routers.DefaultRouter()
 router.register(r'parent', ParentSiteViewSet)
 router.register(r'post', PostViewSet)

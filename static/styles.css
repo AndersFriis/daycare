@@ -5,6 +5,8 @@
     background-color: #f44336; /* Red */
     color: white;
     margin-bottom: 15px;
+    height: 110px;
+    width: 400px;
 }
 
 /* The close button */
@@ -29,28 +31,18 @@
     position: absolute;
     background-color: #f48342;
     height: 90px;
-    width: 200px;
+    width: 100px;
     margin-left: 1050px;
     margin-top: -330px;
-    
-    
 }
 
 .center-text{
 text-align:center;
-color: red;
+color: white;
 }
 
 
 
-
-
-.footer{
-    background-color: lightgreen;
-    height: 51px;
-    margin-top: 210px;
-    
-}
 
 .jumbotron-login{
     position: absolute;
@@ -103,15 +95,10 @@ body{
 }
 
 
-.dontforget{
-    height: 400px;
-    width: 600px;
-    margin-left: 350px;
-    margin-top: -90px;
-}
 
 .panel-body{
-    background-color: #f48342;
+    background-color: #659EC7;
+    color: white;
 }
 
 
@@ -194,14 +181,31 @@ parent-item.ng-leave-active {
     color: pink;
 }
 
+
+
+.container-chatwithanders h1{
+    color:#659EC7
+}
+
+.jumbotron-chatwithanders{
+    background-color: #659EC7;
+}
+
 .jumbotron{
     background-image: url("kidsbackground.jpg");
     background-repeat:no-repeat;
-    background-size: 80%;
-    min-height: 600px;
+    background-size: 70%;
+    min-height: 400px;
     background-color: #659EC7;
     background-position: center top;
+    
 }
+
+.closingstitle{
+    background-color:#659EC7;
+}
+
+
 
 .well h1{
     background-color: white;

@@ -1,22 +1,43 @@
 <form ng-submit="postEditCtrl.savePost()">
-    <div class="form-group">
-        <label>
-            Message For Anders
-        </label>
-        <textarea rows="2" cols="5"
-            ng-model="postEditCtrl.editedPost.post"
-            class="form-control"
-        ></textarea>
-    <button class="btn btn-primary" type="submit">
-        Send
-    </button>
-
-
-    <button
-        class="btn btn-danger"
-        type="button"
-        ng-show="postEditCtrl.cancel"
-        ng-click="postEditCtrl.cancel()">
-        Cancel
-    </button>
+    <div class="jumbotron-chatwithanders">
+        <div class="container-chatwithanders">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="well chatwithanders">
+                        <h1>Chat With Anders</h1>
+                        <div class="form-group">
+                            <label>
+                            Message For Anders
+                            </label>
+                            <textarea rows="3" cols="5"
+                                ng-model="postEditCtrl.editedPost.post"
+                                class="form-control"
+                            ></textarea>
+                            <button class="btn btn-primary" type="submit">
+                                Send
+                            </button>
+                            <button
+                                class="btn btn-danger"
+                                type="button"
+                                ng-show="postEditCtrl.cancel"
+                                ng-click="postEditCtrl.cancel()">
+                                Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </form>
+
+
+<!-- <div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <h2>
+            You Got Mail {{post.created_date}}
+            </h2>
+            <p style="text-align:center;">
+            <a href="{{postemail.get_email_url}}">Click here to view</a>
+            </p> 
+</div> -->
