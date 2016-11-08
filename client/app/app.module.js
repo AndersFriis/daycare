@@ -27,7 +27,7 @@ const AppModule = angular.module('app', [
             url: '/',
             component: 'parentPage',
         }).state('parent', {
-            url: '/parent/{parentId}',
+            url: '/parent/',
             component: 'parentPage',    
         }).state('post', {
             url: '/post',

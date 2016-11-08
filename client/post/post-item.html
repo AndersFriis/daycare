@@ -17,7 +17,7 @@
     </div>
     <div class="panel-footer clearfix">
         <div class="pull-right">
-            {{ postItemCtrl.post.created | date:'medium'}}
+            {{ postItemCtrl.post.created_date | date:'short'}}
         </div>
         <div class="post-item-controls" ng-show="postItemCtrl.showControls">
             <button class="btn btn-default" ng-click="postItemCtrl.setEditMode(true)">

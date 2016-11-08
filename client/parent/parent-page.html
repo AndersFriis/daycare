@@ -73,25 +73,35 @@
     </div>
 </div>
 
+<div class="well addyourchildsinfo">
+<h3>Add your childs info</h3>
+</div>
 
-    
-            
-                <h2>Add Your Childs Information</h2>
-                <p class="lead">
-                </p>
+<div class="container">
+        <div class="well addchild">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Add Your Childs Information</h3>
+                    <button class="button" data-toggle="collapse" data-target="#demo">Add Your Child Info</button>
 
-                <parent-edit
-                    parent="parentPageCtrl.editedParent"
-                    save="parentPageCtrl.saveParent(editedParent)"
-                />
-                <parent-item 
-                    ng-repeat="parent in parentPageCtrl.parent track by parent.id"
-                    parent="parent"
-                    delete="parentPageCtrl.deleteParent(parentToDelete)"
-                    update="parentPageCtrl.updateParent(parentToUpdate)"
-                />
-            
-        
+                    <div id="demo" class="collapse">
+
+                        <parent-edit
+                        parent="parentPageCtrl.editedParent"
+                        save="parentPageCtrl.saveParent(editedParent)"
+                        />
+                        <parent-item 
+                        ng-repeat="parent in parentPageCtrl.parent track by parent.id"
+                        parent="parent"
+                        delete="parentPageCtrl.deleteParent(parentToDelete)"
+                        update="parentPageCtrl.updateParent(parentToUpdate)"
+                        />
+                    </div>    
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>        
     
    
         
@@ -112,20 +122,6 @@
 
 
 
-<div class="row">
-    <div class="col-md-8 col-md-offset-">
-        <div class="funpics">
-            <button class="btn btn-info" data-toggle="collapse" data-target="#fun">Fun Pics Of The Kids</button>
-        </div>
-    
-            <div id="fun" class="collapse">
-                <h1>Pics of your Kids</h1>
-                <img class="picsofyourkids" src="/static/kidshappy.png"/>
-                <img class="picsofyourkids" src="/static/kidwater.png"/>
-                <img class="picsofyourkids" src="/static/kideating.jpg"/>
-            </div>
-    </div>
-</div>
 
 
 
