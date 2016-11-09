@@ -1,6 +1,7 @@
 {% extends "core/base.html" %}
 
 {% block content %}
+    
     <body style="background-color:lightblue;"></body>
 <img class="bannerlogin" src="/static/kidsbannerlogin.jpg"/>
 
@@ -12,28 +13,31 @@
                 <a href="{% url 'accounts:register' %}" class="btn btn-success btn-md">Sign Up</a>
             {% endif %}
 </div>        
-    <div class="Welcome-to-Awesome-Daycare">
-    <h2><span class="red">W</span><span class="purple">e</span><span class="red">l</span><span class="green">c</span><span class="yellow">o</span><span class="blue">m</span><span class="green">e</span>
-    <span class="red">t</span><span class="yellow">o</span>
+    <div class="center-text">
+    <h2><span class="red">W</span><span class="purple">e</span><span class="red">l</span><span class="green">c</span><span class="red">o</span><span class="blue">m</span><span class="green">e</span>
+    <span class="red">t</span><span class="purple">o</span>
     <span  class="green">A</span><span class="red">w</span><span class="blue">e</span><span class="purple">s</span><span class="red">o</span><span class="red">m</span><span class="red">e</span>
     <span class="purple">D</span><span class="green">a</span><span class="red">y</span><span class="blue">c</span><span class="red">a</span><span class="green">r</span><span class="red">e</span></h2>
     
     </div>    
 
-    <div class="jumbotron-signup">
-        <h2>Please sign up</h2>
-        
-
-<form action="" method="post">
-            {% csrf_token %}
-            {% for field in form %}
-                {% include "core/_form_input.html" %}
-            {% endfor %}
-            <div class="signup">
-            <button class="btn btn-primary" type="submit">Register</button>
-        </form> 
+<div class="container">
+    <div class="well-signup">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h2>Please sign up</h2>
+                <form action="" method="post">
+                {% csrf_token %}
+                {% for field in form %}
+                    {% include "core/_form_input.html" %}
+                {% endfor %}
+                <button class="btn btn-primary text-align: center" type="submit">Register</button>
+                </form> 
+                
             </div>
+        </div>
     </div>
+</div>        
 {% endblock content %}
 
 

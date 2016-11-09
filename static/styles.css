@@ -66,14 +66,9 @@ color: white;
 }
 
 
-.jumbotron-login{
-    position: absolute;
-    background-color: lightblue;
-    height: 260px;
-    width: 350px;
-    margin-left: 490px;
-    margin-top: 30px;
-
+.well-login{
+    background-color: #659EC7;
+     
 }
 
 
@@ -83,11 +78,8 @@ color: white;
     width: 200px;
 }
 
-.jumbotron-signup{
-    background-color: lightblue;
-    height: 440px;
-    width: 290px;
-    margin-left: 530px;
+.well-signup{
+    background-color: #659EC7;
 }
 
 
